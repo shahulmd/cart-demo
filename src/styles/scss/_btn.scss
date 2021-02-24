@@ -1,0 +1,16 @@
+@mixin btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #007bff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 0;
+}

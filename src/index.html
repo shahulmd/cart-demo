@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__left">Shopping cart</div>
+        <div class="header__right">
+            <button class="clear-cart btn">Clear Cart</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__left">
+            <div class="products">
+                <div class="product">
+                    <div class="product__body">
+                        <div class="product__img">Item 1</div>
+                    </div>
+                    <div class="product__footer">
+                        <div class="product__footer__left">
+                            <div>Item 1</div>
+                            <div>
+                                <span class="old-price">$1.5</span>
+                                <span class="new-price">$0.5</span>
+                            </div>
+                        </div>
+                        <div class="product__footer__right"><a href="#" data-name="item1" data-price="0.5" class="add-to-cart btn">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__body">
+                        <div class="product__img">Item 2</div>
+                    </div>
+                    <div class="product__footer">
+                        <div class="product__footer__left">
+                            <div>Item 2</div>
+                            <div>
+                                <span class="old-price">$1.5</span>
+                                <span class="new-price">$0.9</span>
+                            </div>
+                        </div>
+                        <div class="product__footer__right"><a href="#" data-name="item2" data-price="0.9" class="add-to-cart btn">Add to cart</a></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__body">
+                        <div class="product__img">Item 2</div>
+                    </div>
+                    <div class="product__footer">
+                        <div class="product__footer__left">
+                            <div>Item 3</div>
+                            <div>
+                                <span class="old-price">$21.5</span>
+                                <span class="new-price">$20</span>
+                            </div>
+                        </div>
+                        <div class="product__footer__right"><a href="#" data-name="item3" data-price="20.0" class="add-to-cart btn">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__right">
+            <div class="cart-message"></div>
+            <table class="show-cart">
+            </table>
+            <table class="show-cart__summary ">
+                <thead>
+                    <tr>
+                        <th colspan="2">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item (<span class="total-count"></span>)</td>
+                        <td>$<span class="total-cart"></span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Order Total</td>
+                        <td>$<span class="total-cart"></span></td>
+                    </tr>
+                </tfoot>
+          
+            </table>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>
