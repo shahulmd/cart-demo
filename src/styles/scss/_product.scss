@@ -36,6 +36,14 @@
     font-weight: bold;
   }
   &__discount {
+    position: absolute;
+
+    top: 31px;
+    background: lightgreen;
+    left: 0;
+    padding: 5px;
+    font-size: 11px;
+    color: #fff;
   }
   &__footer {
     background-color: #eaeaea;
